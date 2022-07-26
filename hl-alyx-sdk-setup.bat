@@ -71,6 +71,7 @@ ECHO Copying Half Life Alyx files...
 ECHO :::::::::::::::::::::::::::::::::::::::
 robocopy "%alyx_dir%/game/hlvr" "%mod_dir%/game/hlvr" /s /e /nfl /ndl /njh /XD maps /XF pak*
 robocopy "%alyx_dir%/game/bin/win64" "%mod_dir%/game/bin/win64" hlvr.exe
+robocopy "%alyx_dir%/game/bin/win64" "%mod_dir%/game/bin/win64" hammer.exe
 robocopy "%alyx_dir%/game/core" "%mod_dir%/game/core" /s /e /nfl ndl /njh
 ECHO :::::::::::::::::::::::::::::::::::::::
 ECHO Done copying Half Life Alyx files.
