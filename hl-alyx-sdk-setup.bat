@@ -80,7 +80,7 @@ ECHO :::::::::::::::::::::::::::::::::::::::
 ECHO :::::::::::::::::::::::::::::::::::::::
 ECHO Copying Half Life 2 files...
 ECHO :::::::::::::::::::::::::::::::::::::::
-robocopy "%alyx_dir%/game/hlvr" "%mod_dir%/game/hl2" /s /e /nfl /ndl /njh /XD maps /XF pak*
+robocopy "%alyx_dir%/game/hl2" "%mod_dir%/game/hl2" /s /e /nfl /ndl /njh /XD maps /XF pak*
 robocopy "%alyx_dir%/game/bin/win64" "%mod_dir%/game/bin/win64" source2mod.exe
 ECHO :::::::::::::::::::::::::::::::::::::::
 ECHO Done copying Half Life 2 files.
