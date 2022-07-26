@@ -1,10 +1,11 @@
 "GameInfo"
 {
 	game 		"Half-Life: Alyx"
-	title 		"Half-Life: Alyx"
+	title 		"Half-Life: 2"
 	type		singleplayer_only
 	nomodels 1
 	nohimodel 1
+	screenmode flat_only
 
 	nodegraph 0
 	tonemapping 1 // Show tonemapping ui in tools mode
@@ -27,10 +28,12 @@
 		//
 		SearchPaths
 		{
+			Game				hl2
 			Game				hlvr
 			Game				core
-			Mod					hlvr
-			Write				hlvr
+			Mod					hl2
+			Write				hl2
+			AddonRoot			hlvr_addons
 		}
 	}
 	
@@ -81,8 +84,11 @@
 
 	Source1Import
 	{
-		"importmod"			"ep2"
-		"importdir"			"..\hlvr"
+		"importmod"			"hl2"
+		"importdir"			"..\hl2"
+		
+		"createStaticOverlays"	"1" // info_overlay entities will be converted to static overlay nodes instead of preserved as Info_overlay entities
+		"createPathParticleRopes" "1" // upconvert ropes
 	}
 
 	Engine2
